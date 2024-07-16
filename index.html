@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./style.css">
+        <title>AluraGeek</title>
+    </head>
+    <body>
+        <header class="header">
+            <img src="./images/logo.svg" alt="Logo da AluraGeek">
+        </header>
+
+        <main class="container_conteudo">
+            <section class="section_produtos">
+                <h1>Meus produtos:</h1>
+                <div class="cards_container">
+
+                    <div class="card" data-id="1">
+                        <img class="foto_produto" src="./images/gameboy.png" alt="">
+                        <div class="card_info">
+                            <p class="nome_produto">Game Boy Classic</p>
+                            <h3 class="preco_produto">$ 60,00</h3>
+                            <button class="excluir_produto">
+                                <img src="./images/icone-lixeira.png" alt="Icone de uma lixeira">
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+            <section class="container_dados">
+                <h2>Adicionar produto:</h2>
+
+                <form onsubmit="event.preventDefault(); adicionarProduto()">
+                    <input class="input_nome" required type="text" placeholder="nome">
+                    <input class="input_preco" required type="text" placeholder="valor">
+                    <input class="input_imagem" required type="text" placeholder="imagem">
+
+                    <div class="container_botoes">
+                        <button class="botao_guardar">Guardar</button>
+                        <button class="botao_limpar" onclick="event.preventDefault(); limparCampos()">Limpar</button>
+                    </div>
+                </form>
+            </section>
+            
+        </main>
+
+        <footer>
+            <img src="./images/logo.svg" alt="Logo da AluraGeek">
+            <h4>Desenvolvido por Matheus Henrique</h4>
+            <p>Alura Latam- 202x</p>
+        </footer>
+
+        <script src="./script/index.js"></script>   
+    </body>
+</html>

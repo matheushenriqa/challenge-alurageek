@@ -1,0 +1,22 @@
+{
+  "produtos": [
+    {
+      "id": "75b3",
+      "nome": "Pote Stormtrooper",
+      "preco": 77,
+      "imagem": "https://f.feridinha.com/lEBft.png"
+    },
+    {
+      "id": "c6ec",
+      "nome": "Gameboy",
+      "preco": 44,
+      "imagem": "https://f.feridinha.com/4RLyN.png"
+    },
+    {
+      "id": "b579",
+      "nome": "Teste",
+      "preco": 157,
+      "imagem": "https://f.feridinha.com/lEBft.png"
+    }
+  ]
+}
